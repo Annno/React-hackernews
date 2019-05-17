@@ -1,33 +1,135 @@
-.App {
-  text-align: center;
+body {
+    color: #222;
+    background: #f4f4f4;
+    font: 400 14px CoreSans, Arial, sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+.search {
+    position:fixed;
+    padding: 16px;
+    width: 100%;
+    background: #0a3d62;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+    color: #0a3d62;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover {
+    text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid #dddddd;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    background: transparent;
+    color: #808080;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #222;
+}
+
+.search .btn {
+    color: white;
+    border-color: #a2ffb8;
+}
+
+.margin-v-1x {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.margin-v-2x {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.margin-h-1x {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.margin-h-2x {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-inline {
+    display: inline-block;
+}
+
+.table-component {
+    border-left: 3px solid #0a3d62;
+    transition: border-color .2s ease-in-out;
+}
+
+.table-component:hover {
+    border-color: #e58e26;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.table-header {
+    font-weight: bold;
+    color: #0a3d62;
+    border-left: none;
+    border-bottom: 2px solid #e58e26;
+    padding-right: 70px;
+    padding-bottom: 8px;;
+}
+.table {
+    padding: 96px 16px 16px 16px;
+}
+
+.error {
+    padding: 10px 8px;
+    color: white;
+    background: #e55039;
+    border-radius: 4px;
+}
+
